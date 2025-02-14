@@ -2326,9 +2326,8 @@ textarea.w-select {
   grid-row-gap: 2rem;
   text-align: center;
   flex-direction: column;
-  /* max-width: 100rem; */
+  max-width: 95vw;
   margin: 10vh auto;
-  /* font-size: 20vw; */
   line-height: .8;
   display: flex;
   position: relative;
@@ -2381,6 +2380,10 @@ textarea.w-select {
   gap: 16px;
 
   margin-bottom: 24px;
+
+  position: relative;
+  top: 0;
+  left: 0;
 }
 
 .text-block-2:hover {
@@ -2442,7 +2445,7 @@ textarea.w-select {
 
 .footer-icon-wrapper {
   text-align: center;
-  border-top: 1px rgba(255, 211, 20, .24);
+  /* border-top: 1px rgba(255, 211, 20, .24); */
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
@@ -2478,7 +2481,9 @@ textarea.w-select {
   margin-right: auto;
   display: flex;
 
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.6);
+
+  border-radius: 12px;
 
   padding: 30px 40px 20px;
 }
@@ -2856,4 +2861,25 @@ textarea.w-select {
 
 .btn-custom:hover {
   background-color: rgb(0, 0, 0, 0.5);
+}
+
+.copied {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 1.25rem;
+
+  background-color: rgb(0, 0, 0, 0.5);
+
+  border-radius: 12px;
+
+  display: none;
 }
